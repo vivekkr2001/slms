@@ -1,0 +1,42 @@
+<div class="modal-course">
+    <form id="addCourse" name="addCourse" role="form" ng-submit="vm.onSubmit()" class="form-horizontal">
+        <div class="modal-header">
+            <button type="button" ng-click="vm.modal.cancel()" class="close">
+                <span aria-hidden="true">X</span>
+                <span class="sr-only">Close</span></button>
+            <h4 id="myModalLabel" class="modal-title">Add your Course </h4>
+        </div>
+        <div class="modal-body">
+            <div role="alert" ng-show="vm.formError" class="alert alert-danger">
+                {{vm.formError}}</div>
+            <div class="form-group">
+                <label for="name" class="col-xs-2 col-sm-2 control-label">Name</label>
+                <div class="col-xs-10 col-sm-10">
+                    <input type="text" id="name" name="name" ng-model="vm.formData.name"
+                        class="form-control" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea id="description" name="description" rows="2" ng-model="vm.formData.description"
+                        class="form-control"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="learning" class="col-sm-2 control-label">Learnings</label>
+                <div class="col-sm-10">
+                    <textarea id="learning" name="learning" rows="2" ng-model="vm.formData.learning"
+                        class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-click="vm.modal.cancel()" type="button" class="btn btn-
+    default">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

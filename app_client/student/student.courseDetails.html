@@ -1,0 +1,53 @@
+<navigation></navigation>
+<div class="container">
+    <page-header content="vm.pageHeader"></page-header>
+    <!-- <div class="row page-header">
+        <div class="col-lg-12">
+            <h1>{{vm.data.course.name}}</h1>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            <div class="row">
+                <p>{{vm.data.course.description}}</p>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Learning</h2>
+                    </div>
+                    <div class="panel-body" >
+                        <span class="label label-warning"ng-repeat="learn in vm.data.course.learning">
+                            {{learn}}</span>
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary content-panel">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">course Content</h2>
+                        </div>
+                        <div class="panel-body content-container" ng-repeat="content in vm.data.course.content">
+                            <div class="row">
+                                <div class="content">
+                                    <div class="well well-sm content-header">
+                                        <span class="contentTitle">{{content.name}}</span><small
+                                            class="pull-right contentTimestamp">{{content.createdOn}}</small>
+                                    </div>
+                                    <div class="col-xs-12"><a>{{content.link}}</a>
+                                        <p>{{content.details}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <p class="lead">Network Security for learning technology.</p>
+            <p>View Quizzes here.</p>
+        </div>
+    </div>
+    <footer-generic></footer-generic>
+</div>
