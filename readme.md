@@ -4,7 +4,7 @@ This SLMS uses MEAN stack. This is a project of Internet Technologies course.
 
 ## Get the code
 
-To get the code for a specific branch:
+To get the code :
 
 `$ git clone https://github.com/vivekkr2001/slms.git`
 
