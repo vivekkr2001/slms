@@ -12,7 +12,7 @@ courseListCtrl.$inject = ['$scope', 'slmsData'];
         strapline: 'Teacher section'
     };
     vm.sidebar = {
-        content: "stdy adndld"
+        content: "stdy Portal"
     };
     vm.message = "Fetching Courses";
     slmsData.getCourses()
